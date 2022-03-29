@@ -15,7 +15,7 @@
             return $correo;
         }
         public function generarDatos(){
-            //insertar el correo generado en la base de datos y el correo del representante
+            //insertamos el correo generado en la base de datos
             $query = "INSERT INTO data (Correo, CorreoRepresentante) VALUES ('".$this->generarCorreo()."', '".$this->generarCorreo()."')";
             $resultado = $this->insertar($query);
             //imprimimos el correo generado
